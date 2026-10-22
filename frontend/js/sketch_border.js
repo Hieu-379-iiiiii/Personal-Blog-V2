@@ -82,7 +82,7 @@ function drawSketchBorders() {
 
     // draw one full
     function drawPass() {
-      const padding = 3; // keep lines slightly inside canvas edge
+      const padding = 1; // keep lines slightly inside canvas edge
       const offset = () => (seededRandom() - 0.5) * 3; 
 
       const tl = { x: padding + offset(), y: padding + offset() };
@@ -97,7 +97,6 @@ function drawSketchBorders() {
       drawWobblyLine(bl.x, bl.y, tl.x, tl.y);
     }
 
-    drawPass();
     drawPass();
     drawPass();
   });
